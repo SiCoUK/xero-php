@@ -184,6 +184,14 @@ class TrackingCategory extends Remote\Object
         $this->_data['Option'] = $value;
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getOption()
+    {
+        return $this->_data['Option'];
+    }
     
     /**
      * @return TrackingOption[]|Remote\Collection
