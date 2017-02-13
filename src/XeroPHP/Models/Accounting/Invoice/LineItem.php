@@ -346,6 +346,9 @@ class LineItem extends Remote\Object
      */
     public function getTracking()
     {
+        if (!isset($this->_data['Tracking'])) {
+            return null;
+        }
         return $this->_data['Tracking'];
     }
 
